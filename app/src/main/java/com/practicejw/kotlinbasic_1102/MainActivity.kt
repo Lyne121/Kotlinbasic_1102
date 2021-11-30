@@ -29,5 +29,11 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "토스트 버튼이 눌렸습니다.", Toast.LENGTH_SHORT).show()
 
         }
-    }
+
+        btnToast2.setOnClickListener {
+
+            Toast.makeText(this, "두번째 버튼이 눌렸습니다.", Toast.LENGTH_SHORT).show()
+
+        }
+
 }
