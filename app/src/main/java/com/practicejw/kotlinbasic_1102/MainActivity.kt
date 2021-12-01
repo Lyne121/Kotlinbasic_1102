@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
 //          로그를 찍어보기
             Log.d("메인화면", "로그찍기 버튼이 눌림")
-            Log.e("메인화면", "Log.e로 찍어보기" )
+            Log.e("메인화면", "Log.e로 찍어보기")
 
         }
 
@@ -35,5 +35,15 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "두번째 버튼이 눌렸습니다.", Toast.LENGTH_SHORT).show()
 
         }
+
+        btnCopyText.setOnClickListener {
+//            1. 입력칸에 어떤 내용이 있는지? > 컴퓨터에게 메모 명령하자 = 변수를 만들고 값을 담아두자
+            val inputContent = edtContent.text.toString()
+
+//            2. 텍스트 뷰에 알아낸 내용을 세팅 = 메모해둔 내용을 > 텍스트 뷰의 text 속성에 대입한다
+            txtCopyResult.text = inputContent
+        }
+
+    }
 
 }
