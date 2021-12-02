@@ -44,6 +44,13 @@ class MainActivity : AppCompatActivity() {
             txtCopyResult.text = inputContent
         }
 
+        btnContentToast.setOnClickListener {
+            val inputContent = edtContent.text.toString()
+
+//            입력된 내용을 > 토스트로 출력
+            Toast.makeText()
+        }
+
     }
 
 }
